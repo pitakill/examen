@@ -43,7 +43,7 @@ em {
 .details > header span:first-child {
   color: #000;
   font-weight: bold;
-  margin: 0 3.5em 0 0;
+  margin: 0 3em 0 0;
   position: relative;
 }
 .details > header span:first-child:after {
@@ -95,11 +95,11 @@ em {
 .messages button:before {
   background-image: url("../img/bk_oticon.png");
   content: '';
-  height: 42px;
+  height: 30px;
   left: 1px;
-  width: 21px;
+  width: 15px;
   position: absolute;
-  top: 0px;
+  top: 2px;
   z-index: 5;
 }
 .messages .hide,
