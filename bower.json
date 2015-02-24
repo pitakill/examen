@@ -1,9 +1,9 @@
 {
+  "name": "examen",
   "version": "0.0.1",
   "authors": [
     "@pitakill"
   ],
-  "keywords": [
   "private": true,
   "ignore": [
     "**/.*",
@@ -12,5 +12,9 @@
     "test",
     "tests"
   ],
-  "dependencies": {}
+  "dependencies": {
+    "octicons": "~2.2.0",
+    "animate.css": "~3.2.1",
+    "jquery": "~2.1.3"
+  }
 }

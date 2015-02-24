@@ -1,0 +1,176 @@
+body,
+html {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  height: 100%;
+  width: 100%;
+}
+body {
+  font: 16px 'Arimo', sans-serif;
+}
+.container {
+  left: 50%;
+  max-width: 20.9375em;
+  margin: -8.625em 0 0 -10.4678em;
+  position: absolute;
+  top: 50%;
+}
+em {
+  font-style: normal;
+  font-weight: bold;
+}
+.details {
+  margin: 0 auto;
+  text-align: initial;
+}
+.details > header {
+  border-bottom: 1px solid #ddd;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  height: 1.875em;
+  padding: 0.5em 1em;
+  width: 100%;
+}
+.details > header span {
+  color: #646464;
+  float: left;
+  font-size: 0.7em;
+  height: 2em;
+  margin-left: 1em;
+}
+.details > header span:first-child {
+  color: #000;
+  font-weight: bold;
+  margin: 0 3.5em 0 0;
+  position: relative;
+}
+.details > header span:first-child:after {
+  bottom: 0;
+  content: '';
+  border-bottom: 3px solid #ddd;
+  left: 50%;
+  margin-left: -1.25em;
+  position: absolute;
+  width: 2.5em;
+}
+.details > div {
+  color: #4182c9;
+  background: #fff;
+  border-bottom: 1px solid #ddd;
+  font-size: 0.8em;
+  padding: 0.5em 1em 0.5em 3em;
+  position: relative;
+}
+.details > div:after,
+.details > div:before {
+  font-family: 'octicons';
+}
+.details > div:after {
+  color: #ddd;
+  content: '\f05a';
+  float: right;
+}
+.details > div:before {
+  color: #b1b1b1;
+  content: '\f001';
+  position: absolute;
+  left: 1.5em;
+  top: 0.7em;
+}
+.messages button {
+  background-color: #ddf7db;
+  border: 1px outset rgba(238,238,238,0.5);
+  -webkit-border-radius: 0.5em;
+  border-radius: 0.5em;
+  color: #4182c9;
+  font-weight: bold;
+  margin-bottom: 0.5em;
+  position: relative;
+  padding: 1em 0;
+  text-shadow: 1px 1px 1px #fff;
+  width: 100%;
+}
+.messages button:before {
+  background-image: url("../img/bk_oticon.png");
+  content: '';
+  height: 42px;
+  left: 1px;
+  width: 21px;
+  position: absolute;
+  top: 0px;
+  z-index: 5;
+}
+.messages .hide,
+.messages .info {
+  font-size: 0.75em;
+}
+.messages .hide {
+  color: #52595d;
+  font-weight: bold;
+  float: left;
+}
+.messages .info {
+  color: #4182c9;
+  float: right;
+}
+.repository {
+  margin-top: 2em;
+}
+.repository > header {
+  background: -webkit-linear-gradient(bottom, #eaeaea, #f9f9f9);
+  background: -moz-linear-gradient(bottom, #eaeaea, #f9f9f9);
+  background: -o-linear-gradient(bottom, #eaeaea, #f9f9f9);
+  background: -ms-linear-gradient(bottom, #eaeaea, #f9f9f9);
+  background: linear-gradient(to top, #eaeaea, #f9f9f9);
+  border: 1px solid #ddd;
+  -webkit-border-radius: 5px 5px 0 0;
+  border-radius: 5px 5px 0 0;
+  color: #52595d;
+  height: 1.5em;
+  padding: 0.75em 0.5em;
+}
+.repository main {
+  background-color: #fafafb;
+  border: 1px solid #ddd;
+  -webkit-border-radius: 0 0 5px 5px;
+  border-radius: 0 0 5px 5px;
+  padding: 1em 0;
+  text-align: center;
+}
+.repository main input {
+  border: 1px solid #ddd;
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0.25em 1em;
+  width: 90%;
+}
+.repository .new_repository {
+  float: right;
+  background: -webkit-linear-gradient(bottom, #646464, #8c8c8c);
+  background: -moz-linear-gradient(bottom, #646464, #8c8c8c);
+  background: -o-linear-gradient(bottom, #646464, #8c8c8c);
+  background: -ms-linear-gradient(bottom, #646464, #8c8c8c);
+  background: linear-gradient(to top, #646464, #8c8c8c);
+  border: 1px solid #505050;
+  -webkit-border-radius: 2.5px;
+  border-radius: 2.5px;
+  color: #fff;
+  font-weight: bold;
+  padding: 0.25em 0.5em;
+}
+.repository .title_repository {
+  font-weight: bold;
+  height: 1.5625em;
+  position: relative;
+}
+.repository .title_repository:after {
+  content: '(2)';
+  color: #99a4ab;
+  right: -1.5em;
+  position: absolute;
+}

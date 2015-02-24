@@ -1,0 +1,154 @@
+//Valores por defecto
+
+background_button = rgb(221,247,219)
+background_button_grey_start = rgb(100,100,100)
+background_button_grey_end = rgb(140,140,140)
+background_main = rgb(250,250,251)
+background_repository_header_start = rgb(234,234,234)
+background_repository_header_end = rgb(249,249,249)
+border_color_button = rgba(238,238,238,.5)
+border_repository_info = rgb(221,221,221)
+font_color_blue = rgb(65,130,201)
+font_color_grey = rgb(82,89,93)
+font_color_grey_light = rgb(153,164,171)
+font_family = 'Arimo', sans-serif
+font_size = 16px
+
+@import 'nib'
+
+body, html
+  box-sizing border-box
+  height 100%
+  width 100%
+
+body
+  font font_size font_family
+
+.container
+  left 50%
+  max-width 20.9375em
+  margin -8.625em 0 0 -10.4678em
+  position absolute
+  top 50%
+
+em
+  font-style normal
+  font-weight bold
+
+.details
+  margin 0 auto
+  text-align initial
+  > header
+    border-bottom 1px solid border_repository_info
+    box-sizing border-box
+    height 1.875em
+    padding .5em 1em
+    width 100%
+    span
+      color background_button_grey_start
+      float left
+      font-size .70em
+      height 2em
+      margin-left 1em
+      &:first-child
+        color black
+        font-weight bold
+        margin 0 3.5em 0 0
+        position relative
+        &:after
+          bottom 0
+          content ''
+          border-bottom 3px solid border_repository_info
+          left 50%
+          margin-left -1.25em
+          position absolute
+          width 2.5em
+  > div
+    color font_color_blue
+    background white
+    border-bottom 1px solid border_repository_info
+    font-size .80em
+    padding 0.5em 1em 0.5em 3em
+    position relative
+    &:after, &:before
+      font-family 'octicons'
+    &:after
+      color border_repository_info
+      content '\f05a'
+      float right
+    &:before
+      color darken(border_repository_info, 20%)
+      content '\f001'
+      position absolute
+      left 1.5em
+      top .70em
+
+.messages
+  button
+    background-color background_button
+    border 1px outset border_color_button
+    border-radius .5em
+    color font_color_blue
+    font-weight bold
+    margin-bottom .5em
+    position relative
+    padding 1em 0
+    text-shadow 1px 1px 1px #fff
+    width 100%
+    &:before
+      background-image url('../img/bk_oticon.png')
+      content ''
+      height 42px
+      left 1px
+      width 21px
+      position absolute
+      top 0px
+      z-index 5
+  .hide, .info
+    font-size .75em
+  .hide
+    color font_color_grey
+    font-weight bold
+    float left
+  .info
+    color font_color_blue
+    float right
+
+.repository
+  margin-top 2em
+  > header
+    background linear-gradient(bottom, background_repository_header_start, background_repository_header_end)
+    border 1px solid border_repository_info
+    border-radius 5px 5px 0 0
+    color font_color_grey
+    height 1.5em
+    padding .75em .5em
+  main
+    background-color background_main
+    border 1px solid border_repository_info
+    border-radius 0 0 5px 5px
+    padding 1em 0
+    text-align center
+    input
+      border 1px solid border_repository_info
+      border-radius 10px
+      box-sizing border-box
+      padding .25em 1em
+      width 90%
+  .new_repository
+    float right
+    background linear-gradient(bottom, background_button_grey_start, background_button_grey_end)
+    border 1px solid darken(background_button_grey_start, 20%)
+    border-radius 2.5px
+    color white
+    font-weight bold
+    padding .25em .5em
+  .title_repository
+    font-weight bold
+    height 1.5625em
+    position relative
+    &:after
+      content '(2)'
+      color font_color_grey_light
+      right -1.5em
+      position absolute
